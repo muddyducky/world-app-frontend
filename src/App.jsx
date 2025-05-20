@@ -14,8 +14,7 @@ const App = () => {
   // Function to fetch Oceania countries
   const fetchOceaniaCountries = async () => {
     try {
-      console.log("API HOST", API_HOST)
-      const response = await axios.get(`${API_HOST}/oceania`);
+      const response = await axios.get(`${API_HOST}oceania`);
       return response.data;
     } catch (error) {
       console.error('Error fetching Oceania countries:', error.message);
